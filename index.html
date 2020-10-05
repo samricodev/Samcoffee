@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1" />
+    <title>SamCoffe</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script type="text/javascript" src="app.js" /></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand" href="#">Logo</a>
+
+      <ul class="nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#menu">Menú</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mapa">Ubicación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acercade.html">Acerca de</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.php">Login</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <!--Portada-->
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>SamCoffe</h1>
+        <p>El mejor café de la ciudad</p>
+        <button class="btn btn-primary" onclick="Aviso()">Conoce más</button>
+      </div>
+    </header>
+
+    <section class="container mt-5 mb-5">
+      <!--Tarjetas de presentación-->
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+          <div class="card">
+            <img
+              src="imagenes/agriculture.jpg"
+              class="card-img-top"
+              alt="es una milpa"
+              title="cuida la tiera men"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Agricultura</h5>
+              <p class="card-text">
+                La agricultura en nuestra comunidad es muy importante, porque
+                gracias a ella podemos disfrutar del rico café de Sam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+          <div class="card">
+            <img
+              src="imagenes/process.jpg"
+              class="card-img-top"
+              alt="es un proceso de café"
+              title="cuida la tiera men"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Procesamiento</h5>
+              <p class="card-text">
+                Nuestra comunidad es muy cuidadosa en el procesamiento del café
+                para que usted deguste de un buen oro líquido.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+          <div class="card">
+            <img
+              src="imagenes/service.jpg"
+              class="card-img-top"
+              alt="es una instalación nuestra"
+              title="cuida la tiera men"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Servicio</h5>
+              <p class="card-text">
+                El servicio que ofrecemos en nuestras instalaciones son de alta
+                calidad haciendo grata tu estancia con nosotros, siempre elige
+                SamCoffe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!--Espacio de emails-->
+      <div class="container mt-5 mb-5 ">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-5">
+            <img
+              src="imagenes/CoffeeDoddle.svg"
+              alt="una persona con un SamCoffe :)"
+            />
+          </div>
+          <div class="col-12 col-sm-6">
+            <h3>
+              Empieza tu día con una taza de café!
+            </h3>
+            <p>
+              Ordena tu taza de café a domicilio o busca tu SamCoffe más cercano
+            </p>
+            <a href="#mapa">Ir al mapa </a>
+          </div>
+        </div>
+        <form action="">
+          <label for="email"><b>Correo electrónico</b></label>
+          <div class="d-flex">
+            <div class="flex-fill mr-2">
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <button type="button" class="btn btn-primary" onclick="getData()">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <!--Tira de productos-->
+      <div class="container mt-5 mb-5">
+        <div class="product-stripe" id="menu">
+          <h4>Productos</h4>
+          <div class="stripe-container">
+            <div class="card">
+              <img
+                src="imagenes/frappe.jpg"
+                class="card-img-top"
+                alt="producto de café"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Frappé</h5>
+                <span class="badge badge-info">$45 MXN</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="imagenes/late_coffe.jpg"
+                class="card-img-top"
+                alt="producto de café"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Late</h5>
+                <span class="badge badge-info">$40 MXN</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="imagenes/p3.jpg"
+                class="card-img-top"
+                alt="producto de café"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Expresso</h5>
+                <span class="badge badge-info">$35 MXN</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="imagenes/american_coffe.jpg"
+                class="card-img-top"
+                alt="producto de café"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Americano</h5>
+                <span class="badge badge-info">$45 MXN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!--Mapa-->
+      <div class="container mt-5 mb-5 text-center">
+        <h4>
+          Aquí nos vemos:
+        </h4>
+        <p>
+          Calle Nueva Escocia 1885, Guadalajara, Jal
+        </p>
+        <div class="responsive-iframe" id="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.178082888735!2d-103.39143078559798!3d20.702991904196505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4e98d5453d%3A0xc4fdd3929a2ecbd1!2sCETI%20Plantel%20Colomos!5e0!3m2!1ses!2smx!4v1595209139741!5m2!1ses!2smx"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Samuel Rico &copy derechos reservador
+    </footer>
+  </body>
+</html>
