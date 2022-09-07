@@ -12,3 +12,7 @@ function getData(){
 function Aviso(){
     alert("Esperanos poquito!");
 }
+
+function hola (){
+    alert("hola mundo");
+}
